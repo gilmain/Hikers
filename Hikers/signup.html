@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="title" content="Hikers">
+  <meta name="description"
+    content="Hikers is an online portal forum for hikers and mountain adventurers with the addition of saving your hiking routes via Google Maps and share it with everyone">
+  <meta name="keywords" content="hiking, community, forum, hiking-route, hiking-planner">
+  <meta name="robots" content="index, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <title>Hikers - Signup</title>
+  <link rel="icon" href="image/logo.png" type="image/png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/loginstyle.css">
+
+
+</head>
+
+<body>
+
+  <div class="modal-wrap">
+
+    <div class="modal-bodies">
+      <div class="modal-body modal-body-step-1 is-showing">
+        <div class="title">Sign Up</div>
+        <div class="description">Hello there, Register to Hikers</div>
+        <div id="response">
+          <p></p>
+        </div>
+        <form action="" method="GET" onsubmit="signup(event)">
+          <input type="text" id="Username" placeholder="Username*" />
+          <input type="email" id="Email" placeholder="E-Mail*" />
+          <input type="password" id="Password" placeholder="Password*" />
+          <input type="con-password" id="ConfirmPassword" placeholder="Confirm Password*" />
+          <div class="col-md-4">
+            <div class="row text-center sign-with">
+              <div class="col-md-12">
+                <a href="logIn.html"><span>Already has an account? Log in here.</span></a>
+                <h3>Sign in with</h3>
+              </div>
+              <div class="col-md-12 sign-in28912">
+                <div class="btn-group btn-group-justified">
+                  <a href="#" class="btn btn-primary btn-primary3838">Facebook</a> <a href="#"
+                    class="btn btn-danger btn-danger37883">
+                    Google</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="button" style="border: none;">Sign Up</button>
+
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+  <script>
+    function signup(event) {
+      event.preventDefault();
+
+      var username = document.getElementById('Username').value;
+      var email = document.getElementById('Email').value;
+      var password = document.getElementById('Password').value;
+      var ConfirmPassword = document.getElementById('ConfirmPassword').value;
+      var messaage = document.getElementById("response");
+
+      if (username.length == 0) {
+        messaage.innerHTML = '<p>Username must be filled!</p>';
+        scroll();
+        return;
+      }
+
+
+      if (email.length == 0) {
+        messaage.innerHTML = '<p>Email must be filled!</p>';
+        scroll();
+        return;
+      }
+
+      if (password.length == 0) {
+        messaage.innerHTML = '<p>Password must be filled!</p>';
+        scroll();
+        return;
+      }
+
+      if (ConfirmPassword.length == 0) {
+        messaage.innerHTML = '<p>Confirm password must be filled!</p>';
+        scroll();
+        return;
+      }
+
+
+      alert("Success register user!");
+      window.location.replace("logIn.html");
+
+    }
+  </script>
+
+</body>
+
+</html>
