@@ -1,5 +1,5 @@
 <h1>Hikers</h1>
-This project is a Frontend prototype for an online forum and route planner web application for the hikers and adventurers community. Submitted for Human & Computer Interaction course final project in college. <br>
+This project is a Frontend prototype for an online forum and route planner web application for the hikers and adventurers community. Submitted for Human & Computer Interaction course final project in college. Using HTML, CSS, and Javascript to make this website<br>
 <br>
 
 Github page : https://zulluzi.github.io/Hikers.github.io/index.html <br>
